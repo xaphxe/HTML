@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h4>회원 정보 입력</h4>
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <label for="user-id">아이디</label><br>
+        <input type="text" id="user-id" name="user-id"
+        placeholder="아이디를 입력해주세요."> <br>
+        <label for="user-pw">비밀번호</label><br>
+        <input type="text" id="user-pw" name="user-pw"
+        placeholder="비밀번호를 입력해주세요."> 
+        <input type="submit" value="로그인" >
+    </fieldset>
+    <fieldset>
+        <legend>추가 정보</legend>
+        <label for="email">메일 주소:</label>
+        <input type="email" placeholder="aaa@naver.com"> <br>
+       <br>
+        메일 수신<label for="agreement">
+            <input type="radio" id="agreement" name="mail" value="s_1" checked> 메일 수신 동의
+        </label>
+        <label for="refuse">
+            <input type="radio" id="refuse" name="mail" value="s_2"> 메일 수신 거부
+        </label>
+        <br><br>
+        연락처: <input type="phone" placeholder="-을 빼고 입력해주세요."
+                size="15" maxlength="13" autocomplete="off"><br>
+        생년월일: <input type="birth" placeholder="YYYY-MM-DD"
+                size="15" maxlength="10" autocomplete="off">
+        <br>
+        취미: <label for="hobby1"><input type="checkbox" id="hobby1" value="v_1">독서</label>
+        <label for="hobby2"><input type="checkbox" id="hobby2" value="v_1">음악감상</label>
+        <label for="hobby3"><input type="checkbox" id="hobby3" value="v_1">운동</label>
+        <br><br>
+        <label for="path">가입 경로:</label>
+        <select name="" id="path">
+            <option value="">블로그</option>
+            <option value="">검색</option>
+            <option value="">SNS</option>
+            <option value="">지인추천</option>
+            <option value="">기타</option>
+        </select>
+        <br><br>
+        메모 <textarea name="" id="" cols="50" rows="10" placeholder="자유롭게 의견을 남겨주세요."></textarea>
+        <br><br>
+        <input type="submit" value="제출" style="background-color: #1e88e5;">
+    </fieldset>
+</body>
+</html>
