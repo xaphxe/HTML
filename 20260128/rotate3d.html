@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            perspective: 200px; /*🟡원근김*/
+            border: 1px solid;
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+        }
+        .rotatex{ transform: rotateX(45deg); }/*x축 기준으로 시계방향으로 45도 회전*/
+        .rotatey{ transform: rotateY(45deg); }/*y축 기준으로 시계방향으로 45도 회전*/
+        .rotatez{ transform: rotateZ(45deg); }/*z축 기준으로 시계방향으로 45도 회전*/
+        .rotatexyz{ transform: rotate3D(2.5, 1.2, -1.5, 45deg); }
+        /*x축, y축, z축으로 수치만큼 45도 회전*/
+    </style>
+</head>
+<body>
+    <h2>이미지 3차원 회전하기</h2>
+    <div class="origin">
+        <div class="rotatex"><img src="../images/hellokitty.webp" alt="" width="300"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatey"><img src="../images/hellokitty.webp" alt="" width="300"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatez"><img src="../images/hellokitty.webp" alt="" width="300"></div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz"><img src="../images/hellokitty.webp" alt="" width="300"></div>
+    </div>
+</body>
+</html>

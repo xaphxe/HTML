@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_relative</title>
+    <!-- relative 상대적인 -->
+     <style>
+        .static{
+            background-color: antiquewhite;
+            width: 300px;
+            height: 200px;
+            position: static; /*기본값: 요소를 문서의 흐름에 맞추어 배치*/
+        }
+        .relative-1{
+            background-color: lightblue;
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+        .relative-2{
+            background-color: pink;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            top: -50px;
+            left: 100px;
+        }
+        .fixed{
+            background-color: aquamarine;
+            width: 500px;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            right: 50px;
+            border: solid 3px;
+        }
+        .sticky{
+            background-color: wheat;
+            width: 80px;
+            height: 80px;
+            position: sticky;
+            top: 5px; /*top이 있어야 한다. top이 5픽셀일 때 고정*/
+
+        }
+        pre{
+            font-size: 20px;
+        }
+        .float{
+            float: right;
+            border: 5px dotted red;
+            width: 128px;
+            padding: 8px;
+        }
+     </style>
+</head>
+<body>
+    <div class="static">박스1</div>
+    <div class="relative-1">박스2</div>
+    <div class="relative-2">박스3</div>
+    <div class="fixed">박스4<br> 공지사항, 상단 메뉴바 스크롤 생겼을 때 확인</div> 
+    <div class="sticky">박스5 <br> top 5px일 때 고정</div>
+
+    <pre> 
+        화요일인 27일은 중부지방을 중심으로 아침 기온이 영하 10도 안팎으로 낮겠고 
+        바람도 불어 체감온도는 더욱 낮아 매우 춥겠다. 
+        이날 새벽부터 아침 사이 서해안을 중심으로 비 또는 눈이 내리는 지역이 있겠다.
+
+        기상청에 따르면 이날 전국이 대체로 흐리다가 오전부터 차차 맑아지겠다. 
+        다만 충청과 호남, 제주는 오후부터 차차 맑아질 것으로 예보됐다. 
+        아침 최저기온은 영하 14도~0도, 낮 최고기온은 영하 4도~8도의 분포를 나타내겠다.
+    </pre>
+    <h3>학기말 공지</h3>
+    <hr>
+    <div>
+        <p class="float">30일에 개인 포프폴리오 발표가 있습니다.</p>
+        <p> 영하 10도의 날씨에도 이렇게 학원을 찾아주신 여러분 감사합니다</p>
+    </div>
+</body>
+</html>

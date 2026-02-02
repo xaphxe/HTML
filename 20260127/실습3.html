@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed{
+            background-color: whitesmoke;
+            width: 800px;
+            height: 50px; 
+            position: fixed;
+            top: 0px;
+            text-align: center;
+        
+        } 
+        section{
+            display: flex; 
+            /* 주축 블록요소를 인라인 요소로 변경 */
+            /* justify-content: space-between; 좌우 붙여주고 적당한 공백이 있으면서 정렬 */
+            /* justify-content: space-around; 좌우에도 공백 */
+            /* justify-content: center; 가운데 정렬 */
+            /* justify-content: flex-end; 전체가 오른쪽 창 끝으로 */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            height: 100vh; /*전체화면(스크롤 포함) 비율 높이(가로wh)*/
+        }
+        div{
+            width: 200px;
+            height: 100wh;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">시즌 마감  세일  NEW  MEN  WOMEN  KIDS  JODAN</div>
+    <br>
+    <section>
+        <div class="box1">
+            <h4>안내</h4>
+            <p>멤버 가입</p>
+            <p>매장 찾기</p>
+            <p>제품 가이드</p>
+            <p>러닝화 가이드</p>
+        </div>
+        <div class="box2">
+            <h4>멤버 혜택</h4>
+            <p>웰컴 쿠폰</p>
+            <p>생일 쿠폰</p>
+            <p>학생 할인 쿠폰</p>          
+        </div>
+        <div class="box3">
+            <h4>주문배송조회</h4>
+            <p>반품 정책</p>
+            <p>결제 방법</p>
+            <p>공지사항</p>
+            <p>문의하기</p>
+        </div>
+        <div class="box4">
+            <h4>회사소개</h4>
+            <p>About Nike</p>
+            <p>소식</p>
+            <p>채용</p>
+            <p>투자자</p>
+            <p>지속가능성</p>
+            <p>코칭</p>
+            <p>신고하기</p>
+        </div>
+    </section>
+</body>
+</html>
