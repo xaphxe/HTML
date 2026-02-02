@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--폰트어썸 CDN : -->
+        <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                background-color: rgba(128, 128, 128, 0.205);
+                display: flex;
+                justify-content: space-around;
+                height: 70px;
+                align-items: center;
+                padding-top: 15px;
+            }
+        
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            li{
+                padding: 0 15px;
+            }
+            a{
+                text-decoration: none;
+                color: gray;
+                font-weight: 800;
+            }
+            .fixed1{
+            background-color: rgb(2, 66, 2);
+            color: white;
+            width: 150px;
+            height: 100px;
+            position: fixed;
+            top:200px;
+            right: 50px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            }
+            .fixed2{
+            background-color: rgb(2, 104, 2);
+            color: white;
+            width: 150px;
+            height: 100px;
+            position: fixed;
+            top:320px;
+            right: 50px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            }
+            .appo{
+                padding: 0 5px;
+            }
+            a:hover{
+                color: blue;
+            }
+            .appo:hover{
+                background-color: blue;
+                cursor: pointer;
+                color: aliceblue;
+                border-radius: 7px;
+            }
+            /* 브라우저 가로가 768이하일때 */
+            @media screen and (max-width:768px) {
+                nav{
+                    height: 50px;
+                    align-items: flex-start;
+                }
+                .navbar ul{
+                    flex-direction: column;
+                }
+                .navbar ul li{
+                    line-height: 2;
+                }
+                .fa-music, a{
+                    /* visibility: hidden;  */ /*눈에서만 안 보인다*/
+                    display: none; /*자리 자체 차지하지 않는다*/
+                }
+            }
+            .container{
+                display: flex;
+                border: 1px solid black;
+                width: 100%;
+                height: 70%;
+                background-color: #1E3932;
+            }
+            .box1{
+                margin: 30px;
+                color: white;
+            }
+            .container img{
+                margin: 30px;
+            }
+            .container .box1 .btn{
+                right: 50px;
+            }
+           
+        </style>
+</head>
+<body>
+    <nav>
+    <div class="logo">
+        <h1> &nbsp; <img src="../images/스크린샷 2026-01-29 123848.png" width="50" alt=""> 
+            &nbsp; </h1>
+        <!-- 엔티티코드 -->
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">COFFEE</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">ESG</a></li>
+            <li><a href="#">STARBUCKS REWARDS</a></li>
+        </ul>
+    </div>
+    <div class="icons">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-music"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-address-book"></i></a></li>
+            <li class="appo"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+    </div>
+    <div class="fixed1"><br>STARBUCKS<br>BIZMALL</div> 
+    <div class="fixed2"><br>STARBUCKS<br>BIZMALL</div> 
+</nav>
+<div class="container">
+    <img src="../images/스크린샷 2026-01-29 142736.png" width="200" alt="">
+        <div class="box1">
+            <p>
+                스타벅스만의 특별한 혜택, <span>스타벅스 리워드</span><br>
+                스타벅스 회원이세요? 로그인을 통해
+                나만의 리워드를 확인해보세요. <br>
+                스타벅스 회원이 아니세요? 
+                가입을 통해 리워드 혜택을 즐기세요.
+            </p>
+            <div class="btn">
+            <button type="submit" class="submit-btn">가입하기</button>
+            </div>
+            <br><hr><br>
+            <p>
+                회원 가입 후, 스타벅스 모바일 카드를 <span>"나에게 선물하기"로
+                구매하시고, 편리하게 등록하세요!</span><br>
+                스타벅스 회원이세요? 로그인을 통해
+                나만의 리워드를 확인해보세요. <br>
+                스타벅스 회원이 아니세요? 
+                가입을 통해 리워드 혜택을 즐기세요.
+            </p>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

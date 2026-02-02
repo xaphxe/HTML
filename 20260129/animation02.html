@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation02</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        section{
+            background: url(../images/star.jpg);
+            height: 900px;
+            width: 100%;
+        }
+        .firPart span {
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 2s ease-out alternate infinite;
+        }
+        .firPart p {
+            color: aliceblue;
+            font-size: 70px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            animation: moveIn 5s ease-in-out infinite;
+        }
+        @keyframes moveIn  {
+            from{
+                right: -10%;
+                opacity: 0;
+            }to{
+                right: 5%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firPart">
+            <span> pour un logiciel CRM,</span> <br>
+            <p>
+                simple, complet <br>
+                et intuitif
+            </p>
+        </div>
+    </section>
+</body>
+</html>
